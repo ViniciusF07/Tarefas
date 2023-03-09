@@ -1,63 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Tarefas</title>
     <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-    <h1>Tarefas</h1>
-    <h2>Situação das tarefas</h2>
 
-<!--    "descricao": "Teste1",
+</head>
+
+<body>
+        <h1>Tarefas</h1>
+        <h2>Situação das tarefas</h2>
+
+        <!--    "descricao": "Teste1",
         "responsavel": null,
         "nivel": 3,
         "situacao": "Pendente",
         "prioridade": 1-->
+        <form action="#">
+            <input type="text" autocomplete="off" id="descricao" placeholder="Descrição da tarefa">
+            <input type="text" id="responsavel" placeholder="Responsável da tarefa">
+            <input type="number" id="nivel" placeholder="nivel da tarefa">
+            <input type="text" id="situação" placeholder="Situação da tarefa">
+            <input type="Number" id="Prioridade" placeholder="Prioridade da tarefa">
 
-    <form action="#">
-        <input type="text"
-        autocomplete="off"
-        id="descricao"
-        placeholder="Descrição da tarefa">
+            <div id="form-buttons">
+                    <input id="btn-cancelar" type="reset" alt="teste"/>
+                    <input id="btn-criar" type="submit" alt="Teste2" />
+            </div>
 
-        <input type="text"
-        id="responsavel"
-        placeholder="Responsável da tarefa">
-
-        <input type="number"
-        id="nivel"
-        placeholder="nivel da tarefa">
-
-        <input type="text"
-        id="situação"
-        placeholder="Situação da tarefa">
-        <input type="Number"
-        id="Prioridade"
-        placeholder="Prioridade da tarefa">
-
-        <div id="form-buttons">
-            
-            <button>
-                
-                <input id="btn-cancelar" type="image" src="Editar.png" alt="teste"/>
-            </button>
-            
-            <button>
-                
-                <input id="btn-criar" type="image" src="Rectangle.png" alt="Teste2"/></button>
-            
-
-
-        </div>
-    </form>
-
+        </form>
     <h2>Tarefas cadastradas</h2>
     <ul id="list-tarefas"></ul>
-
-
 </body>
+
 </html>
